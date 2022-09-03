@@ -6,4 +6,4 @@ print('First solution: ', text.replace(" ", "-"))
 
 words = text.split(' ')
 
-print(f'Second solution:', '-'.join(words))
+print('Second solution:', '-'.join(words))
