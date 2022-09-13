@@ -6,5 +6,6 @@ text = input('Enter text: \n')
 text = text.replace(',', '')
 text = text.replace('.', '')
 text = text.replace(' ', '')
-my_dict = {i: text[i] for i in range(len(text))}
-print(f'Колличество вхождений каждой буквы в текст: {list(my_dict)[-1] + 1}')
+my_dict = {i: text.count(i) for i in text}
+print(f'Количество вхождений каждой буквы в текст: {my_dict}')
+
