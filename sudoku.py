@@ -1,0 +1,25 @@
+import random as rd
+import time
+
+start_time = time.time()
+clm = [i for i in range(1, 10)]
+rd.shuffle(clm)
+a = ([clm[3], clm[2], clm[1], clm[0], clm[8], clm[7], clm[4], clm[5], clm[6]])
+b = ([clm[6], clm[5], clm[4], clm[3], clm[2], clm[1], clm[7], clm[8], clm[0]])
+c = ([clm[0], clm[8], clm[7], clm[6], clm[5], clm[4], clm[1], clm[2], clm[3]])
+d = ([clm[2], clm[1], clm[0], clm[8], clm[7], clm[6], clm[3], clm[4], clm[5]])
+e = ([clm[5], clm[4], clm[3], clm[2], clm[1], clm[0], clm[6], clm[7], clm[8]])
+f = ([clm[8], clm[7], clm[6], clm[5], clm[4], clm[3], clm[0], clm[1], clm[2]])
+h = ([clm[4], clm[3], clm[2], clm[1], clm[0], clm[8], clm[5], clm[6], clm[7]])
+k = ([clm[7], clm[6], clm[5], clm[4], clm[3], clm[2], clm[8], clm[0], clm[1]])
+l = ([clm[1], clm[0], clm[8], clm[7], clm[6], clm[5], clm[2], clm[3], clm[4]])
+print(f'{a[0:3]}   {a[3:6]}   {a[6:9]}')
+print(f'{b[0:3]}   {b[3:6]}   {b[6:9]}')
+print(f'{c[0:3]}   {c[3:6]}   {c[6:9]}\n')
+print(f'{d[0:3]}   {d[3:6]}   {d[6:9]}')
+print(f'{e[0:3]}   {e[3:6]}   {e[6:9]}')
+print(f'{f[0:3]}   {f[3:6]}   {f[6:9]}\n')
+print(f'{h[0:3]}   {h[3:6]}   {h[6:9]}')
+print(f'{k[0:3]}   {k[3:6]}   {k[6:9]}')
+print(f'{l[0:3]}   {l[3:6]}   {l[6:9]}\n')
+print("--- %s seconds ---" % (time.time() - start_time))
