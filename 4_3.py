@@ -3,8 +3,5 @@
 # для этих ключей будут браться с клавиатуры
 
 keys = int(input(f'Enter the number of keys: '))
-my_dict = {}
-for i in range(keys):
-    print(f'Key {i}')
-    my_dict[i] = {'name': input('Enter name: '), 'email': input('Enter email: ')}
+my_dict = {i: {'name': input(f'Key {i}\nEnter name: '), 'email': input('Enter email: ')} for i in range(keys)}
 print(my_dict)
