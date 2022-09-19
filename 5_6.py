@@ -3,11 +3,10 @@
 
 list1 = input('Введите первую строку: ')
 list2 = input('Введите вторую строку: ')
-if len(list1) < len(list2):
-    for i in range(len(list1)):
-        if list1[i] == list2[i]:
-            print(f'Повторяется \"{list1[i]}\" с индексом \"{i}\"')
+if len(list1) > len(list2):
+    length_string = len(list2)
 else:
-    for i in range(len(list2)):
-        if list2[i] == list1[i]:
-            print(f'Повторяется \"{list1[i]}\" с индексом \"{i}\"')
+    length_string = len(list1)
+for i in range(length_string):
+    if list1[i] == list2[i]:
+        print(f'Повторяется \"{list1[i]}\" с индексом \"{i}\"')
